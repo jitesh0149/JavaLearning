@@ -4,8 +4,12 @@ public class Animal {
 
     int legs;
 
-    public void eat() {
+    public void eat() {        
         System.out.println("I'm eating.....");
+    }
+
+    public void makeSound() {
+        System.out.println("Common Animal Sound");
     }
 
     public static void staticMethod() {
