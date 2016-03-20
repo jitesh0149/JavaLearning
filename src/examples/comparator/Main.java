@@ -19,5 +19,31 @@ public class Main {
         for (HDTV a : al) {
             System.out.println(a.getBrand());
         }
+        
+        HDTV1 tv11 = new HDTV1(55, "Samsung");
+        HDTV1 tv12 = new HDTV1(60, "Sony");
+        HDTV1 tv13 = new HDTV1(42, "Panasonic");
+
+        ArrayList<HDTV1> al1 = new ArrayList<HDTV1>();
+        al1.add(tv11);
+        al1.add(tv12);
+        al1.add(tv13);
+
+        Collections.sort(al1, new HDTV1());
+        for (HDTV1 a : al1) {
+            System.out.println(a.getBrand());
+        }
     }
 }
+
+
+
+/* Output
+
+Panasonic
+Samsung
+Sony
+Panasonic
+Samsung
+Sony
+*/
