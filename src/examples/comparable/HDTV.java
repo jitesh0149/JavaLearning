@@ -10,6 +10,9 @@ class HDTV implements Comparable<HDTV> {
         this.brand = brand;
     }
 
+    public HDTV() {
+    }
+
     public int getSize() {
         return size;
     }

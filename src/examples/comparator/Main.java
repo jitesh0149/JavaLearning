@@ -10,6 +10,7 @@ public class Main {
         HDTV tv2 = new HDTV(60, "Sony");
         HDTV tv3 = new HDTV(42, "Panasonic");
 
+        //Using Other Comparator Class
         ArrayList<HDTV> al = new ArrayList<HDTV>();
         al.add(tv1);
         al.add(tv2);
@@ -19,7 +20,7 @@ public class Main {
         for (HDTV a : al) {
             System.out.println(a.getBrand());
         }
-        
+        //Using the same class implementing Comparator
         HDTV1 tv11 = new HDTV1(55, "Samsung");
         HDTV1 tv12 = new HDTV1(60, "Sony");
         HDTV1 tv13 = new HDTV1(42, "Panasonic");
