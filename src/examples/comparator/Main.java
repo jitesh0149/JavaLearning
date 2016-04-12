@@ -21,9 +21,9 @@ public class Main {
             System.out.println(a.getBrand());
         }
         //Using the same class implementing Comparator
-        HDTV1 tv11 = new HDTV1(55, "Samsung");
-        HDTV1 tv12 = new HDTV1(60, "Sony");
-        HDTV1 tv13 = new HDTV1(42, "Panasonic");
+        HDTV1 tv11 = new HDTV1(55, "TV55");
+        HDTV1 tv12 = new HDTV1(60, "TV60");
+        HDTV1 tv13 = new HDTV1(42, "TV42");
 
         ArrayList<HDTV1> al1 = new ArrayList<HDTV1>();
         al1.add(tv11);
@@ -44,7 +44,7 @@ public class Main {
 Panasonic
 Samsung
 Sony
-Panasonic
-Samsung
-Sony
+TV42
+TV55
+TV60
 */

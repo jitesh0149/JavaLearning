@@ -10,10 +10,19 @@ public class StaticInitializationBlocksEx {
 //Non Static Initializer block
 
     {
+        System.out.println("StaticInitializationBlocksEx called(Non Static11)");
+    }
+    MemberClassEx m = new MemberClassEx();
+
+    {
         System.out.println("StaticInitializationBlocksEx called(Non Static)");
     }
 
     static {
         System.out.println("StaticInitializationBlocksEx called(Static)");
+    }
+
+    public StaticInitializationBlocksEx() {
+        System.out.println("Constructor ........");
     }
 }

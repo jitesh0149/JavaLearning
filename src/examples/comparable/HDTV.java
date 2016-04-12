@@ -40,4 +40,13 @@ class HDTV implements Comparable<HDTV> {
             return 0;
         }
     }
+    /*
+    if class is declared as following (not Comparable<HDTV> then need to Override method compareTo as shown below    
+    class HDTV implements Comparable
+    
+    @Override
+    public int compareTo(Object o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    */
 }

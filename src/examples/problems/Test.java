@@ -1,6 +1,6 @@
-package examples.mix;
+package examples.problems;
 
-import java.util.List;
+import examples.mix.Vehicle;
 
 public class Test {
 

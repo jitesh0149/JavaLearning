@@ -16,11 +16,12 @@ public class EnumTest {
     public void tellItLikeItIs() {
         switch (day) {
             case MONDAY:
-                System.out.println("Mondays are bad.");
+                //below day.MONDAY will return Day
+                System.out.println("Mondays are bad."+day.MONDAY.name());
                 break;
 
             case FRIDAY:
-                System.out.println("Fridays are better.");
+                System.out.println("Fridays are better."+day.FRIDAY.ordinal());
                 break;
 
             case SATURDAY:
@@ -47,3 +48,12 @@ public class EnumTest {
         seventhDay.tellItLikeItIs();
     }
 }
+/* 
+Output
+
+Mondays are bad.MONDAY
+Midweek days are so-so.
+Fridays are better.5
+Weekends are best.
+Weekends are best.
+*/
