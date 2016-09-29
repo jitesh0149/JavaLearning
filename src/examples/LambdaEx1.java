@@ -12,7 +12,8 @@ public class LambdaEx1
     printPersons(roster,
           new CheckPerson() {
               public boolean test(Person p) {
-                  return p.getAge() >= 18
+                  return p.getGender() == Person.Sex.MALE
+                      && p.getAge() >= 18
                       && p.getAge() <= 25;
               }
           });
@@ -48,6 +49,9 @@ public class Person {
       	this.age=age;      	
   	}
   
+    public Sex getGender() {
+        return this.gender;
+    }
     public int getAge() {
         return this.age;
     }
