@@ -1,4 +1,4 @@
-package examples.mix;
+package examples.super_sub_class;
 
 public class Car extends Vehicle {
 

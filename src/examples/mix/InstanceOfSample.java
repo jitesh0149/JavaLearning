@@ -58,7 +58,8 @@ public class InstanceOfSample {
         }
     }
 }
-
+//Following syntax will give error
+//public class A 
 class A {
 
     int i, j;

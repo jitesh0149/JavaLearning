@@ -23,43 +23,49 @@ public class LambdaEx2 {
                 p.printPerson();
             }
         }
+
+        /* Above statement can be written with functional operator as shown below
+         List<Person> roster, CheckPerson tester) {
+         roster.stream().filter((p) -> (tester.test(p))).forEach((p) -> {
+         p.printPerson();
+         });*/
     }
 
 }
 /*
-class Person {
+ class Person {
 
-    public enum Sex {
+ public enum Sex {
 
-        MALE, FEMALE
-    }
+ MALE, FEMALE
+ }
 
-    String name;
-    Sex gender;
-    String emailAddress;
-    int age;
+ String name;
+ Sex gender;
+ String emailAddress;
+ int age;
 
-    public Person(String name, Sex sex, int age) {
-        this.name = name;
-        this.gender = sex;
-        this.age = age;
-    }
+ public Person(String name, Sex sex, int age) {
+ this.name = name;
+ this.gender = sex;
+ this.age = age;
+ }
 
-    public Sex getGender() {
-        return this.gender;
-    }
+ public Sex getGender() {
+ return this.gender;
+ }
 
-    public int getAge() {
-        return this.age;
-    }
+ public int getAge() {
+ return this.age;
+ }
 
-    public void printPerson() {
-        System.out.println("Age of " + this.name + " is " + this.age);
-    }
-}
+ public void printPerson() {
+ System.out.println("Age of " + this.name + " is " + this.age);
+ }
+ }
 
-interface CheckPerson {
+ interface CheckPerson {
 
-    boolean test(Person p);
-}
-*/
+ boolean test(Person p);
+ }
+ */

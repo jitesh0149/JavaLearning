@@ -1,17 +1,19 @@
-package examples.others1;
+package examples.mix;
 
 public class InnerClasses {
 
     public static void main(String[] args) {
-        OuterClass o = new OuterClass();
-        OuterClass.nonstaticinnerClass nons = o.new nonstaticinnerClass();
+        OuterClass1 o = new OuterClass1();
+        OuterClass1.nonstaticinnerClass nons = o.new nonstaticinnerClass();
         nons.print();
-        OuterClass.staticinnerClass.print();
+        OuterClass1.staticinnerClass.print();
     }
 }
-//public class OuterClass - gives error as the Class as File Name can be public
 
-class OuterClass {
+//public class OuterClass1 - gives error as the Class as File Name can be public
+//if the name is OuterClass in place of OuterClass1 then also it will give error as
+//OuteClass is already exist in NestedClassTest.java in same package
+class OuterClass1 {
 
     public class nonstaticinnerClass {
 

@@ -1,5 +1,5 @@
 
-package test;
+package examples.algorithms;
  
 public class BubbleSort {
  

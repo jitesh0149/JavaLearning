@@ -1,4 +1,4 @@
-package examples.others;
+package examples.super_sub_class;
 
 public class Vehicle {
 
@@ -36,7 +36,7 @@ public class Vehicle {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null) {
+        if (obj == null ) {
             return false;
         }
         if (getClass() != obj.getClass()) {

@@ -1,8 +1,8 @@
 package examples.problems;
 
-import examples.mix.Vehicle;
+import examples.super_sub_class.Vehicle;
 
-public class Test {
+public class ForLoop {
 
     public static void main(String[] args) {
         Vehicle v = new Vehicle();
@@ -21,3 +21,10 @@ public class Test {
         return count;
     }
 }
+
+/*
+Output:
+examples.super_sub_class.Vehicle@21
+null
+Success
+*/
