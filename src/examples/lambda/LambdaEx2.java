@@ -10,10 +10,10 @@ public class LambdaEx2 {
         roster = new ArrayList<Person>();
         roster.add(new Person("User-1", Person.Sex.MALE, 26));
         roster.add(new Person("User-2", Person.Sex.MALE, 25));
-        /*printPersons(roster,
+        printPersons(roster,
                 (Person p) -> p.getGender() == Person.Sex.MALE
                 && p.getAge() >= 18
-                && p.getAge() <= 25);*/
+                && p.getAge() <= 25);
     }
 
     public static void printPersons(
