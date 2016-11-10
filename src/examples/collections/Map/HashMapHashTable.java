@@ -24,7 +24,7 @@ public class HashMapHashTable {
         //The most direct replacement of a Hashtable is a HashMap.
         //To avoid warning of use of Obsolete Collection
         @SuppressWarnings("UseOfObsoleteCollectionType")
-        Hashtable<String, String> ht2 = new Hashtable<String, String>();
+        Hashtable<String, String> ht2 = new Hashtable<>();
         ht2.put("1", "First");
         ht2.put("2", "Second");
         ht2.put("3", "Third");

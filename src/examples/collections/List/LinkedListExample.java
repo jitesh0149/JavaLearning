@@ -15,21 +15,15 @@ public class LinkedListExample {
         for (String s : list_1) {
             System.out.println(s);
         }
+        System.out.println(list_1.peek());
     }
 
 }
 /*
  Output:
 
- One
- Two
- Three
- Output of the second list is: 
- One
- Two
- Three
- The output of array  : 
- One
- Two
- Three
+One
+Two
+Three
+One
  */

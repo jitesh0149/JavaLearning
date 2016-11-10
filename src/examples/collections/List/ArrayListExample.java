@@ -1,7 +1,6 @@
 package examples.collections.List;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ArrayListExample {
 
@@ -24,11 +23,15 @@ public class ArrayListExample {
         for (String s : list_2) {
             System.out.println(s);
         }
+
+        //After Java 8 we can use below statement in place of above for loop
+        //list_2.stream().forEach((s) -> {
+            //System.out.println(s);
+        //});         
         //Converting list to Array
         //Following statement will give 
         //Exception in thread "main" java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Ljava.lang.String;
         //String[] a1 = (String[]) list_1.toArray();
-
         //Below statement will work fine 
         //If we pass new String[5] the it will print null two times
         //But if we pass new String[x] where x is less than or equal to list_1.size() 
