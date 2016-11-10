@@ -1,4 +1,4 @@
-package examples.collections;
+package examples.collections.List;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.List;
 public class ArrayListExample {
 
     public static void main(String[] args) {
-        List<String> list_1 = new ArrayList<String>();
+        //List<String> list_1 = new ArrayList<String>();
+        ArrayList<String> list_1 = new ArrayList<String>();
         //Below statement will work for JDK 7 or later
         //List<String> list_1 = new ArrayList();
-        //Below statement is giving compile time error (current JDK is 8)
         //List<String> list_1 = new ArrayList<>();
         list_1.add("One");
         list_1.add("Two");
@@ -18,7 +18,7 @@ public class ArrayListExample {
             System.out.println(s);
         }
         System.out.println("Output of the second list is: ");
-        List<String> list_2 = new ArrayList<String>(list_1);
+        ArrayList<String> list_2 = new ArrayList<String>(list_1);
         //Below statement will work for JDK 7 or later
         //List<String> list_2=new ArrayList(list_1);
         for (String s : list_2) {
