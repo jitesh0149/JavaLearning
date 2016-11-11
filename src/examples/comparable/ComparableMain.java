@@ -20,6 +20,8 @@ public class ComparableMain {
         l.add(new HDTV(55, "TV55"));
         l.add(new HDTV(44, "TV44"));
         l.add(new HDTV(66, "TV66"));
+        
+        //Sorting using Comparable
         Collections.sort(l);
         for(HDTV h:l){
             System.out.println(h.getSize());

@@ -15,7 +15,8 @@ public class Main {
         al.add(tv1);
         al.add(tv2);
         al.add(tv3);
-
+        
+        //Sorting using Comparator
         Collections.sort(al, new SizeComparator());
         for (HDTV a : al) {
             System.out.println(a.getBrand());
@@ -29,7 +30,8 @@ public class Main {
         al1.add(tv11);
         al1.add(tv12);
         al1.add(tv13);
-
+        
+        //Sorting using Comparator
         Collections.sort(al1, new HDTV1());
         for (HDTV1 a : al1) {
             System.out.println(a.getBrand());
@@ -37,14 +39,12 @@ public class Main {
     }
 }
 
-
-
 /* Output
 
-Panasonic
-Samsung
-Sony
-TV42
-TV55
-TV60
-*/
+ Panasonic
+ Samsung
+ Sony
+ TV42
+ TV55
+ TV60
+ */

@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package examples.comparator;
 
 import java.util.Comparator;
 
-/**
- *
- * @author Krishna
- */
 public class HDTV1 implements Comparator<HDTV1> {
 
     private int size;
@@ -53,5 +44,4 @@ public class HDTV1 implements Comparator<HDTV1> {
             return 0;
         }
     }
-
 }
