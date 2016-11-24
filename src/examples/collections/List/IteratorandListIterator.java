@@ -13,6 +13,19 @@ public class IteratorandListIterator {
         a1.add("Two");
         a1.add("Three");
         System.out.println("Iterator Example: ");
+        //foreach example
+        for (String a : a1) {
+            System.out.println("For each " + a);
+            if(a.equals("One")){
+                a1.remove(a);
+               //if break; is not there then it will throw java.util.ConcurrentModificationException exception 
+                break;
+            }
+        }
+        //Functional Operator after JDK 8
+        a1.stream().forEach((a) -> {
+            System.out.println("For each " + a);
+        });
         // Iterator<String> i = a1.iterator(); or
         Iterator i = a1.iterator();
         while (i.hasNext()) {
@@ -30,15 +43,15 @@ public class IteratorandListIterator {
     }
 }
 /*
-Output:
-Iterator Example: 
-Zero
-One
-Two
-Three
-List Iterator Example: 
-Zero ++
-One
-Two
-Three
-*/
+ Output:
+ Iterator Example: 
+ Zero
+ One
+ Two
+ Three
+ List Iterator Example: 
+ Zero ++
+ One
+ Two
+ Three
+ */

@@ -16,6 +16,6 @@ public class ArrayExample {
         String[] myStringArray2 = {"a", "b", "c"};
         String[] myStringArray3 = new String[]{"a", "b", "c"};
         String s = "abcd";
-        System.out.println("" + s.substring(0, 4));
+        System.out.println("" + s.substring(0, 4));  
     }
 }
