@@ -1,13 +1,13 @@
 /*
  Given A = 1, B = 2, C = 3, D = 4 ?? Z = 26, write a java standalone
- program to encode the word ?TELEPHONE? into numbers. 
+ program to encode the word ?ELEPHENT? into numbers. 
  */
 package examples.problems;
 
 class ElephantProblem {
 
     public static void main(String ar[]) {
-        String enCodeWord = "TELEPHONE";
+        String enCodeWord = "ELEPHENT";
         String result = "";
         for (int i = 0; i < enCodeWord.length(); i++) {
             switch (enCodeWord.charAt(i)) {
@@ -94,3 +94,8 @@ class ElephantProblem {
         System.out.println(result);
     }
 }
+/* 
+Output:
+
+512516851420
+*/

@@ -3,7 +3,7 @@ package examples.problems;
 public class ElephantProblem1 {
 
     public static void main(String[] args) {
-        String s = "TELEPHONE";
+        String s = "ELEPHENT";
         char[] arrChar = s.toCharArray();
         int[] val = new int[s.length()];
         int i = 0;
@@ -22,6 +22,6 @@ public class ElephantProblem1 {
 /*
 Output
 
-20512516815145
+512516851420
 The value of 'C' - 'A' is 2
 */
