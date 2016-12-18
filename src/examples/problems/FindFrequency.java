@@ -1,10 +1,13 @@
+/*
+ Find frequency of values from a List 
+ */
 package examples.problems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class ListProblem {
+public class FindFrequency {
 
     public static void main(String[] args) {
         //ArrayList<String> l = new ArrayList<>(Arrays.asList("A","B","A","B","B","C","A"));
@@ -28,3 +31,10 @@ public class ListProblem {
         }
     }
 }
+/*
+Output:
+
+The no. of A is : 3
+The no. of B is : 4
+The no. of C is : 1
+*/
